@@ -3,7 +3,7 @@
 /////// WARNING => JO CREDIT NAME CHANGE KREGA USKA ID BAN KAR DIYA JAYEGA + THIS BOT IS MADE BT PREM BABU
 const fs = require("fs");
 module.exports.config = {
-	name: "dost",
+	name: "ma",
     version: "1.1.1",
 	hasPermssion: 0,
 	credits: "PREM BABU", ////////@prem-babu3608
@@ -15,15 +15,15 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("Dost") ||
-     react.includes("dost") || react.includes("COLdrink") || react.includes("ColdRINk") ||
-react.includes("DOST") ||
-react.includes("friend")) {
+	if(react.includes("ma") ||
+     react.includes("Mata") || react.includes("maTa") || react.includes("MAtA") ||
+react.includes("mata") ||
+react.includes("MATA")) {
 		var msg = {
-				body: `💜|| Love U Dost ||💜`,attachment: fs.createReadStream(__dirname + `/noprefix/dost.mp4`)
+				body: `💜|| 𝐉𝐚𝐢 𝐌𝐚𝐭𝐚 𝐃𝐢 ||💜`,attachment: fs.createReadStream(__dirname + `/noprefix/ma.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("💕", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🎉", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
