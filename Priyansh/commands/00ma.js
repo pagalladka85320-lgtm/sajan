@@ -20,7 +20,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("mata") ||
 react.includes("MATA")) {
 		var msg = {
-				body: `💜|| 𝐉𝐚𝐢 𝐌𝐚𝐭𝐚 𝐃𝐢 ||💜`,attachment: fs.createReadStream(__dirname + `/noprefix/ma.mp4`)
+				body: `★━━━━━━━━━━━━━★ 𝐉𝐚𝐢 𝐌𝐚𝐭𝐚 𝐃𝐢 ★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/ma.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🎉", event.messageID, (err) => {}, true)
